@@ -563,6 +563,14 @@
 
 /* ------------2------------- */
 @media (max-width: 500px) {
+  .hero_logo:hover {
+    scale: 1;
+  }
+
+  .nav_part1 {
+    height: 2.6rem;
+  }
+
   .lnotice {
     display: none;
   }
