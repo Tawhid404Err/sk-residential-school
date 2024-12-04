@@ -1,0 +1,66 @@
+.admin_pannel {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  padding: 3rem 6rem;
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.admin_pannel h2 {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-size: 27px;
+  color: #982b31;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+
+.gallery-panel {
+  flex: 1;
+  aspect-ratio: 1 / 1.5;
+  cursor: pointer;
+  transition: 0.4s;
+  pointer-events: auto;
+  border-radius: 8px;
+  /* Not 100% compatible with all browsers */
+  -webkit-box-reflect: below 4px
+    linear-gradient(transparent, rgba(0, 0, 0, 0.053));
+
+  background-color: #ffa51d;
+}
+
+.gallery-panel p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #982b31;
+}
+
+.gallery-panel img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1.5;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-panel:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.253);
+}
+
+.gallery:hover > :not(:hover) {
+  margin-inline: -1.5rem;
+  transform: perspective(400px) rotateY(30deg) scale(0.8);
+}
+
+.gallery-panel:hover ~ .gallery-panel {
+  transform: perspective(400px) rotateY(-30deg) scale(0.8);
+}
