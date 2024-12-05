@@ -2,22 +2,26 @@
   font-family: system-ui, sans-serif;
   font-size: 1rem;
   line-height: 1.7;
-  padding: 3rem 6rem;
   width: 100%;
-  margin-inline: auto;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin: 20px 0;
 }
 
 .admin_pannel h2 {
-  margin-top: -20px;
   margin-bottom: 20px;
   font-size: 27px;
   color: #982b31;
 }
 
 .gallery {
+  width: 90%;
+  max-width: 1288px;
+
   display: flex;
-  justify-content: center;
   gap: 0.25rem;
   transform-style: preserve-3d;
   pointer-events: none;
@@ -29,7 +33,7 @@
   cursor: pointer;
   transition: 0.4s;
   pointer-events: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   /* Not 100% compatible with all browsers */
   -webkit-box-reflect: below 4px
     linear-gradient(transparent, rgba(0, 0, 0, 0.053));
@@ -48,7 +52,7 @@
   width: 100%;
   aspect-ratio: 1 / 1.5;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .gallery-panel:hover {
@@ -63,4 +67,84 @@
 
 .gallery-panel:hover ~ .gallery-panel {
   transform: perspective(400px) rotateY(-30deg) scale(0.8);
+}
+
+.mobile-teacher-panel {
+  display: none;
+}
+
+/* @media (max-width: 1100px) {
+  .admin_pannel {
+    display: none;
+  }
+} */
+
+@media (max-width: 500px) {
+  .admin_pannel {
+    display: none;
+  }
+
+  .mobile-teacher-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+  }
+
+  .mobile-teacher-panel h2 {
+    margin-bottom: 20px;
+    font-size: 27px;
+    color: #982b31;
+    height: max-content;
+  }
+
+  .mobile-teacher-panel p {
+    font-size: 1.2rem;
+    color: #982b31;
+    display: flex;
+  }
+  .mobile-teacher-panel p span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .teacher-scrole {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 0.7rem;
+    padding: 1rem;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .tracher-card {
+    scroll-snap-align: start;
+    min-width: 325px;
+    aspect-ratio: 1.2/1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffa51d;
+    border-radius: 10px;
+  }
+
+  .tracher-card img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .tracher-card h3 {
+    margin: 5px 0;
+    font-size: 23px;
+    color: #982b31;
+  }
 }
