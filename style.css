@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+.webcover {
+  /* background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-seamless-pattern-watercolor-flower-rose-yellow-picture-image_1166699.jpg);
+  background-size: 300px; */
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
