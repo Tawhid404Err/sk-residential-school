@@ -42,7 +42,7 @@
 }
 
 .gallery-panel p {
-  font-size: 1rem;
+  font-size: 0.824rem;
   font-weight: bold;
   color: #982b31;
 }
@@ -73,13 +73,7 @@
   display: none;
 }
 
-/* @media (max-width: 1100px) {
-  .admin_pannel {
-    display: none;
-  }
-} */
-
-@media (max-width: 500px) {
+@media (max-width: 1100px) {
   .admin_pannel {
     display: none;
   }
@@ -100,9 +94,7 @@
   }
 
   .mobile-teacher-panel p {
-    font-size: 1.2rem;
-    color: #982b31;
-    display: flex;
+    display: none;
   }
   .mobile-teacher-panel p span {
     height: 100%;
@@ -113,22 +105,17 @@
   .teacher-scrole {
     width: 90%;
     display: flex;
-    justify-content: space-between;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 0.7rem;
     padding: 1rem;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
 
   .tracher-card {
     scroll-snap-align: start;
-    min-width: 325px;
+    min-width: 200px;
+    max-width: 200px;
+
     aspect-ratio: 1.2/1.5;
     display: flex;
     flex-direction: column;
@@ -142,11 +129,35 @@
     height: 90%;
     object-fit: cover;
     border-radius: 10px;
+    user-select: none; /* Prevent text/image selection */
+    pointer-events: none;
   }
 
   .tracher-card h3 {
     margin: 5px 0;
-    font-size: 23px;
+    font-size: 20px;
     color: #982b31;
+    user-select: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .teacher-scrole {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    cursor: grab;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+    justify-content: start;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .mobile-teacher-panel p {
+    font-size: 1.2rem;
+    color: #982b31;
+    display: flex;
   }
 }
