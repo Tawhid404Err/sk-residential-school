@@ -221,7 +221,7 @@
   text-decoration: none;
   font-size: 19px;
   font-weight: 530;
-  color: var(--full-web-most-txt-color);
+  color: #982b31;
 }
 
 .news_container ul li::after {

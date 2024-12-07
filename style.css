@@ -10,8 +10,9 @@ body {
 }
 
 .webcover {
-  /* background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-seamless-pattern-watercolor-flower-rose-yellow-picture-image_1166699.jpg);
-  background-size: 300px; */
+  background-image: url(img/bg2.webp);
+  background-size: 400px;
+  height: max-content;
 }
 
 ::-webkit-scrollbar {
