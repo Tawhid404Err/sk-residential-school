@@ -1,0 +1,129 @@
+.facilities_cnt_align {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.facilities_cnt {
+  width: 90%;
+  aspect-ratio: 1/0.5;
+  background-image: url(img/slide-img1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: end;
+  justify-self: center;
+  border-radius: 20px;
+  box-shadow: 0 0 50px #0000009c;
+  overflow: hidden;
+}
+
+.facilities_cnt_box1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffa51dad;
+}
+
+.facilities_cnt_box1_sub {
+  width: 75%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  color: #982b31;
+}
+
+.facilities_cnt_box1_sub h3 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #982b31;
+}
+
+.facilities_cnt_box1_sub span {
+  font-size: 70px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.facilities_cnt_box1_sub h4 {
+  font-size: 25px;
+  margin-left: 15px;
+  font-weight: 100;
+}
+
+.facilities_cnt_box1_sub_diff_span {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .facilities_cnt_box1_sub h3 {
+    font-size: 28px;
+  }
+
+  .facilities_cnt_box1_sub h4 {
+    font-size: 20px;
+  }
+
+  .facilities_cnt_box1_sub span {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 790px) {
+  .facilities_cnt {
+    aspect-ratio: 1/0.6;
+  }
+
+  .facilities_cnt_box1 {
+    justify-content: start;
+  }
+
+  .facilities_cnt_box1_sub:first-child {
+    margin-top: 10px;
+  }
+
+  .facilities_cnt_box1_sub {
+    height: 50px;
+  }
+
+  .facilities_cnt_box1_sub h3 {
+    font-size: 20px;
+  }
+
+  .facilities_cnt_box1_sub h4 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .facilities_cnt_box1_sub span {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 580px) {
+  .facilities_cnt_box1_sub:first-child {
+    margin-top: 5px;
+  }
+
+  .facilities_cnt_box1_sub {
+    height: 40px;
+  }
+
+  .facilities_cnt_box1_sub h3 {
+    font-size: 15px;
+  }
+
+  .facilities_cnt_box1_sub h4 {
+    font-size: 12px;
+  }
+
+  .facilities_cnt_box1_sub span {
+    font-size: 30px;
+  }
+}

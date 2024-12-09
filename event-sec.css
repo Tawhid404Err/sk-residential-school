@@ -1,6 +1,7 @@
 .event__wrapper {
   width: 100%;
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +40,7 @@
 
 .event__card_container {
   width: 90%;
-  margin-top: 2rem;
+  margin: 2rem 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -71,10 +72,14 @@
 }
 
 .--event-card-img {
-  background-image: url(img/slide-img3.webp);
+  background-image: url(img/slide-img6.webp);
   background-size: 100% 100%;
   background-position: center;
   transition: 0.3s ease-in-out;
+}
+
+.--event-card-img a {
+  display: none;
 }
 
 .--event-card-info {
@@ -219,6 +224,40 @@
   color: #982b31;
 }
 
+@media (max-width: 1330px) and (min-width: 995px) {
+  .event__card {
+    flex: 1;
+  }
+}
+
+@media (max-width: 995px) {
+  .event__card {
+    width: 400px;
+  }
+
+  .event__card__notice-wrapper {
+    order: -1;
+  }
+}
+
+@media (max-width: 905px) {
+  .event__card {
+    width: 370px;
+  }
+}
+
+@media (max-width: 840px) {
+  .event__card {
+    width: 340px;
+  }
+}
+
+@media (max-width: 775px) {
+  .event__card {
+    width: 280px;
+  }
+}
+
 @media (max-width: 660px) {
   .event__card_container {
     justify-content: center;
@@ -226,9 +265,48 @@
 
   .event__card__notice-wrapper {
     order: -1;
+    width: 100%;
   }
 
-  .event__card {
+  .--event-card-img a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0.4rem;
+    background-color: #0000002f;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .--event-card-img a p:first-child {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .--event-card-info {
+    display: none;
+  }
+
+  .event__card:not(:last-child) {
+    height: 150px;
+    width: 180px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .event__card:not(:last-child) {
+    height: 130px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 342px) {
+  .event__card:not(:last-child) {
     width: 100%;
   }
 }
