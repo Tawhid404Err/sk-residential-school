@@ -227,4 +227,8 @@
   .event__card__notice-wrapper {
     order: -1;
   }
+
+  .event__card {
+    width: 100%;
+  }
 }
