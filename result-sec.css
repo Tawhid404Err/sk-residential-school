@@ -1,5 +1,25 @@
 .result_wrapper {
-  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  background-color: palegoldenrod;
+  height: 600px;
+}
+
+.result_wrapper__cnt {
+  width: 90%;
+  flex: 1;
+}
+
+.result_wrapper__cnt--part1 {
+  background-color: red;
+}
+
+.result_wrapper__cnt--part2 {
+  background-color: aqua;
+  flex: 3;
+}
+
+.result_wrapper__cnt--part3 {
+  background-color: brown;
 }
