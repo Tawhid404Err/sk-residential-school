@@ -51,7 +51,7 @@
 
 .result_wrapper__cnt--part1_title {
   text-align: center;
-  font-size: 30px;
+  font-size: 2rem;
   color: #982b31;
   padding-top: 1.5rem;
 }
@@ -86,6 +86,7 @@
 
 .result-table-container__item1 {
   height: 100%;
+  display: none;
 
   table {
     width: 100%;
@@ -98,5 +99,27 @@
     padding: 10px;
     text-align: center;
     color: #982b31;
+  }
+}
+
+.result-table-container__item1.active {
+  display: block;
+}
+
+#result-table-container__item2.active {
+  display: flex;
+}
+
+#result-table-container__item2 {
+  height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #982b31;
+
+  svg {
+    height: 2.5rem;
   }
 }
