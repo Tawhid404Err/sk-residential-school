@@ -97,7 +97,7 @@
   th,
   td {
     border: 1px solid #982b31;
-    padding: 10px;
+    padding: 3px;
     text-align: center;
     color: #982b31;
   }
@@ -166,7 +166,12 @@
   .result-table-container__item1 h2 {
     justify-content: end;
     font-size: 18px;
-    margin-left: 12px;
     margin-top: -35px;
+  }
+}
+
+@media (max-width: 695px) {
+  .desktop-table {
+    display: none;
   }
 }
