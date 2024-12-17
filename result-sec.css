@@ -162,6 +162,10 @@
   }
 }
 
+.mobile-result-card {
+  display: none;
+}
+
 @media (max-width: 850px) {
   .result-table-container__item1 h2 {
     justify-content: end;
@@ -171,7 +175,39 @@
 }
 
 @media (max-width: 695px) {
+  .year_result {
+    padding: 1.5rem 0;
+  }
+
+  .result-table-container__item1 {
+    h2 {
+      display: none;
+    }
+  }
+
+  .result-table-container__item2 {
+    padding: 11rem 0;
+  }
+
+  .result_wrapper__cnt--part2 {
+    height: max-content;
+  }
+
   .desktop-table {
     display: none;
+  }
+
+  .mobile-result-card {
+    display: block;
+    margin: 10px 0;
+    border: 1px solid #982b31;
+    padding: 10px;
+    color: #982b31;
+  }
+  .mobile-result-card div {
+    margin: 5px 0;
+  }
+  .mobile-result-card div span {
+    font-weight: bold;
   }
 }
