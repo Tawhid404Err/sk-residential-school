@@ -126,7 +126,7 @@
     height: 90%;
     object-fit: cover;
     border-radius: 10px;
-    user-select: none; /* Prevent text/image selection */
+    user-select: none;
     pointer-events: none;
   }
 
@@ -156,5 +156,12 @@
     font-size: 1.2rem;
     color: #982b31;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    svg {
+      height: 1.8rem;
+    }
   }
 }

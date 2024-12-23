@@ -63,7 +63,7 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 
   &:hover .--event-card-img {
-    background-size: 120% 120%;
+    background-size: 120% 180%;
   }
 }
 
@@ -73,7 +73,7 @@
 
 .--event-card-img {
   background-image: url(img/slide-img6.webp);
-  background-size: cover;
+  background-size: 100% 150%;
   background-position: center;
   transition: 0.3s ease-in-out;
 }
