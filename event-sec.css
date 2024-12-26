@@ -62,23 +62,31 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 
-  &:hover .--event-card-img {
+  &:hover .event__card__item {
     background-size: 120% 180%;
   }
 }
 
 .event__card__item {
   flex: 1;
-}
-
-.--event-card-img {
-  background-image: url(img/slide-img6.webp);
   background-size: 100% 150%;
   background-position: center;
   transition: 0.3s ease-in-out;
 }
 
-.--event-card-img a {
+.--event-card-img1 {
+  background-image: url(img/slide-img6.webp);
+}
+.--event-card-img2 {
+  background-image: url(img/slide-img6.webp);
+}
+.--event-card-img3 {
+  background-image: url(img/slide-img6.webp);
+}
+
+.--event-card-img1 a,
+.--event-card-img2 a,
+.--event-card-img3 a {
   display: none;
 }
 
@@ -268,7 +276,7 @@
     width: 100%;
   }
 
-  .--event-card-img a {
+  .event__card__item a {
     height: 100%;
     width: 100%;
     display: flex;
@@ -281,7 +289,7 @@
     text-decoration: none;
   }
 
-  .--event-card-img a p:first-child {
+  .event__card__item a p:first-child {
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
