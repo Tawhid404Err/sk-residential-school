@@ -10,7 +10,7 @@ body {
 }
 
 .webcover {
-  background-image: url(img/bg2.webp);
+  background-image: url(../img/bg2.webp);
   background-size: 400px;
   width: 100%;
 }
