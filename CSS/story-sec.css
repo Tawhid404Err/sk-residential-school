@@ -1,0 +1,38 @@
+.story_wrapper {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.story_container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  background-color: palegoldenrod;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.story_container__box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story_text {
+  flex-grow: 2;
+  padding: 3rem;
+}
+
+.story_text__box {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #982b31;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}

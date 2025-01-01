@@ -76,6 +76,10 @@
 }
 
 @media (max-width: 790px) {
+  .facilities_cnt_align {
+    display: none;
+  }
+
   .facilities_cnt {
     aspect-ratio: 1/0.6;
   }
