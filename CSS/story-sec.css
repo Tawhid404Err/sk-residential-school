@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Diphylleia&family=Faculty+Glyphic&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 .story_wrapper {
   width: 100%;
-  height: 500px;
   display: flex;
   justify-content: center;
   margin-top: 3rem;
@@ -10,9 +12,14 @@
   width: 90%;
   height: 100%;
   display: flex;
-  background-color: palegoldenrod;
   border-radius: 20px;
   overflow: hidden;
+  color: #982b31;
+
+  background: #ffa51dbd;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 .story_container__box {
@@ -25,14 +32,95 @@
 .story_text {
   flex-grow: 2;
   padding: 3rem;
+  padding-right: 0;
 }
 
 .story_text__box {
   width: 100%;
   height: 100%;
   border: 3px solid #982b31;
-  /* display: flex;
+  padding: 1.5rem;
+  padding-top: 2rem;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+
+  h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: lighter;
+    line-height: 0;
+  }
+
+  h1 {
+    margin-top: 3rem;
+    margin-bottom: 2.3rem;
+    font-family: "faculty glyphic", sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 0;
+  }
+
+  p {
+    font-family: "Diphylleia", sans-serif;
+  }
+}
+
+.story_profile--box {
+  flex-direction: column;
+  padding: 1rem;
+
+  h3 {
+    font-weight: normal;
+    font-family: "Nunito Sans", sans-serif;
+    margin-top: 1rem;
+  }
+  h2 {
+    font-family: faculty glyphic, sans-serif;
+  }
+}
+
+.story_profile {
+  height: 230px;
+  aspect-ratio: 1/1;
+  background-color: red;
+  clip-path: circle(50% at 50% 50%);
+  border: 3px solid #982b31;
+  border-radius: 50%;
+  background-image: url("https://scontent.fdac80-1.fna.fbcdn.net/v/t39.30808-6/247821789_4353669678065246_4079845403925322800_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHbXLkxPvz6hQDw2h4UE3gMavbUIHR8225q9tQgdHzbbiHMRo0SUzCLeHC2BySXNahyrUad8Li6Tgvo-seUGVLM&_nc_ohc=RnGq6O9-kxoQ7kNvgG6oawR&_nc_zt=23&_nc_ht=scontent.fdac80-1.fna&_nc_gid=Adl6xf9XCOEB26caRumwHAu&oh=00_AYDX0g6ez8A_AM1TzuRc1tpeLJkCTclLSw21DtP9vcr6XQ&oe=677B5530");
+  background-size: cover;
+}
+
+@media (max-width: 940px) {
+  .story_container {
+    flex-direction: column;
+  }
+
+  .story_profile--box {
+    order: -2;
+  }
+
+  .story_text {
+    padding-right: 3rem;
+    padding-top: 1rem;
+  }
+
+  .story_profile {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .story_text {
+    padding: 2rem;
+  }
+
+  .story_text__box {
+    h2 {
+      line-height: 1.5rem;
+    }
+
+    h1 {
+      line-height: 3rem;
+      margin: 1rem 0;
+    }
+  }
 }
