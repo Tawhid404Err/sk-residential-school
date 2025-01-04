@@ -18,7 +18,6 @@
 .location__container_item {
   flex: 1;
   flex-wrap: wrap;
-  min-width: 340px;
 }
 
 .--location-address {

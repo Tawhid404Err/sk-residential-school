@@ -12,6 +12,7 @@
   height: max-content;
   color: #982b31;
   font-size: 25px;
+  text-shadow: 0 0 20px #ffffff3d;
 }
 
 .event__wrapper--schoole_name span {
@@ -197,6 +198,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .notice_calendar__date {
@@ -224,6 +226,7 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 0 0.8rem;
+  margin-left: 0.6rem;
   display: flex;
   align-items: center;
 }
@@ -310,5 +313,9 @@
 @media (max-width: 618px) {
   .event__card:not(:last-child) {
     width: 100%;
+  }
+
+  .event__card__notice-wrapper {
+    height: 500px;
   }
 }
